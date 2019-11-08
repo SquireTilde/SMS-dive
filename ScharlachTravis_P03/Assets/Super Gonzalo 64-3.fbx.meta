@@ -1,0 +1,508 @@
+fileFormatVersion: 2
+guid: 306b3789615c9ac498f91ea29a970ff8
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Ass_j
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hip_l_j
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hip_r_j
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: knee_l_j
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: knee_r_j
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ankle_l_j
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ankle_r_j
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_j
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_j
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head_j
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_l_j
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_r_j
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder_l_j
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder_r_j
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elbow_l_j
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: elbow_r_j
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: wrist_l_j
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: wrist_r_j
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_l_j
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe_r_j
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chest_j
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Super Gonzalo 64-3(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ass_j
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0.46163872, z: -0.10793905}
+      rotation: {x: 0.31046274, y: -0.6353054, z: -0.31046274, w: 0.6353054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_l_j
+      parentName: Ass_j
+      position: {x: 0.08036412, y: -0.009631492, z: 0.101936996}
+      rotation: {x: 0.9755093, y: -0.21995828, z: 6.111617e-17, w: 7.655011e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: knee_l_j
+      parentName: Hip_l_j
+      position: {x: 0.17164083, y: 0.00000017001088, z: 0}
+      rotation: {x: 0.95666766, y: 0.29118204, z: 0.0000000030681013, w: 0.000000010080132}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ankle_l_j
+      parentName: knee_l_j
+      position: {x: 0.1586583, y: -0.00000020785595, z: -4.4231285e-15}
+      rotation: {x: 0.73241746, y: 0.6808559, z: 0.000000014347965, w: -1.6891673e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_l_j
+      parentName: ankle_l_j
+      position: {x: 0.16467516, y: 0.000000075191984, z: -0.000000003461042}
+      rotation: {x: 0.000000010289506, y: 0.000000008823279, z: -0.21534242, w: 0.9765386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toe_l_j
+      parentName: Foot_l_j
+      position: {x: 0.07595856, y: 0.0007678125, z: -4.681499e-10}
+      rotation: {x: -0.0041108774, y: -0.70709485, z: -0.0041108774, w: 0.70709485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_r_j
+      parentName: Ass_j
+      position: {x: 0.08036412, y: -0.009631492, z: -0.101936996}
+      rotation: {x: 0.21995828, y: 0.9755093, z: -7.4492445e-16, w: -3.1163426e-18}
+      scale: {x: 1, y: 1, z: 1}
+    - name: knee_r_j
+      parentName: Hip_r_j
+      position: {x: -0.17164083, y: -0.00000017001088, z: 1.7763568e-17}
+      rotation: {x: 0.95666766, y: 0.29118204, z: -1.2531602e-16, w: 1.0214845e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ankle_r_j
+      parentName: knee_r_j
+      position: {x: -0.1586583, y: 0.00000020785595, z: -5.3290704e-17}
+      rotation: {x: 0.73241746, y: 0.6808559, z: -9.2667296e-10, w: 0.000000014437694}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_r_j
+      parentName: ankle_r_j
+      position: {x: -0.16467516, y: -0.000000075191984, z: -1.4743761e-15}
+      rotation: {x: 0.0000000072757795, y: -5.307688e-10, z: -0.21534242, w: 0.9765386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toe_r_j
+      parentName: Foot_r_j
+      position: {x: -0.07595856, y: -0.0007678125, z: 6.214695e-10}
+      rotation: {x: -0.0041108774, y: -0.70709485, z: -0.0041108774, w: 0.70709485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_j
+      parentName: Ass_j
+      position: {x: -0.0475, y: 0.0121, z: -0}
+      rotation: {x: 0.92209136, y: -0.38697228, z: -2.3695219e-17, w: 5.6461813e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest_j
+      parentName: Spine_j
+      position: {x: -0.14, y: -0.053, z: 0}
+      rotation: {x: 0, y: 0, z: 0.20967877, w: 0.9777703}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_l_j
+      parentName: chest_j
+      position: {x: -0.011, y: -0.014, z: -0.146}
+      rotation: {x: 0.19416502, y: -0.41863537, z: 0.4605201, w: 0.7582649}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder_l_j
+      parentName: clavicle_l_j
+      position: {x: -0.116, y: 0.011, z: -0.095}
+      rotation: {x: -0.29498765, y: -0.11754654, z: 0.94822866, w: -0.0052403198}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elbow_l_j
+      parentName: shoulder_l_j
+      position: {x: 0.13515833, y: 0.00000080236873, z: 1.97215e-33}
+      rotation: {x: -1.4445792e-34, y: 6.1215574e-17, z: 0.013509814, w: 0.99990875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: wrist_l_j
+      parentName: elbow_l_j
+      position: {x: 0.13145503, y: -0.0000010606601, z: -9.86075e-33}
+      rotation: {x: 0.00043546112, y: 0.004238514, z: 0.08602085, w: 0.99628425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand_l_j
+      parentName: wrist_l_j
+      position: {x: 0.20230702, y: -0.00000034573574, z: 7.8886e-33}
+      rotation: {x: 0.47510603, y: 0.8799285, z: 8.297194e-17, w: -2.4788229e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_r_j
+      parentName: chest_j
+      position: {x: -0.029, y: -0.035, z: 0.149}
+      rotation: {x: 0.41863725, y: 0.1941616, z: 0.75826275, w: -0.46052343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder_r_j
+      parentName: clavicle_r_j
+      position: {x: 0.1319, y: -0.0051, z: 0.0727}
+      rotation: {x: -0.2949881, y: -0.117546745, z: 0.94822854, w: -0.005234836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: elbow_r_j
+      parentName: shoulder_r_j
+      position: {x: -0.135, y: 0.001, z: -0}
+      rotation: {x: 3.8522114e-33, y: -5.711446e-16, z: 0.013509814, w: 0.99990875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: wrist_r_j
+      parentName: elbow_r_j
+      position: {x: -0.114, y: 0, z: -0}
+      rotation: {x: 0.00043564712, y: 0.004238632, z: 0.08602085, w: 0.99628425}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand_r_j
+      parentName: wrist_r_j
+      position: {x: -0.20230702, y: 0.00000034573574, z: -1.0658141e-16}
+      rotation: {x: 0.47510603, y: 0.8799285, z: -1.4236841e-15, w: 1.7108794e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck_j
+      parentName: chest_j
+      position: {x: -0.106, y: 0.019, z: 0}
+      rotation: {x: 0.9398193, y: -0.341672, z: -0.000000007090447, w: 0.00000001950332}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_j
+      parentName: neck_j
+      position: {x: -0.17, y: 0.003, z: -0}
+      rotation: {x: 0, y: -0, z: -0.04318584, w: 0.99906707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Abdomen
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Buttons
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Cap
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Chest
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Eyes
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Face
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Hair
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Hair_Cap
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Hair_Piece
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Foot
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Hand
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Lower_Arm
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Lower_Leg
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Upper_Arm
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Left_Upper_Leg
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Logo
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Moustache
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Foot
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Hand
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Lower_Arm
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Lower_Leg
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Upper_Arm
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Super_Mario_64___Mario:Right_Upper_Leg
+      parentName: Super Gonzalo 64-3(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.5
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
