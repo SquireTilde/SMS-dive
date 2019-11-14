@@ -7,7 +7,7 @@ public class MarioMotor : MonoBehaviour
     Rigidbody _rb = null;
 
     Vector3 _frameSchmove = Vector3.zero;
-    bool _isGrounded = false;
+    bool _isGrounded = true;
 
     private void Awake()
     {
@@ -39,6 +39,7 @@ public class MarioMotor : MonoBehaviour
             return;
 
         _rb.MovePosition(_rb.position + schmoveVector);
+
 
         _frameSchmove = Vector3.zero;
     }
