@@ -38,8 +38,12 @@ public class MarioMotor : MonoBehaviour
         if (schmoveVector == Vector3.zero)
             return;
 
-        _rb.MovePosition(_rb.position + schmoveVector);
 
+        //Vector3 lookVector = (Vector3.forward + schmoveVector.normalized).normalized;
+        Quaternion lookDirection = Quaternion.LookRotation(schmoveVector.normalized, Vector3.up);
+
+        _rb.MovePosition(_rb.position + schmoveVector);
+        _rb.MoveRotation(lookDirection);
 
         _frameSchmove = Vector3.zero;
     }
