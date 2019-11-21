@@ -7,14 +7,23 @@ public class MarioInput : MonoBehaviour
 {
     public event Action<Vector3> MoveInput = delegate { };
     public event Action JumpInput = delegate { };
+    public event Action DiveInput = delegate { };
 
     [SerializeField] Transform _camera = null;
+
+    private MarioMotor _motor = null;
+
+    private void Awake()
+    {
+        _motor = GetComponent<MarioMotor>();
+    }
 
 
     private void Update()
     {
         DetectMoveInput();
         DetectJumpInput();
+        DetectDiveInput();
     }
 
 
@@ -34,9 +43,19 @@ public class MarioInput : MonoBehaviour
 
     void DetectJumpInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxisRaw("Jump") > 0)
         {
+            Debug.Log("JUMP");
             JumpInput?.Invoke();
         }
     }
+
+    void DetectDiveInput()
+    {
+        //if (Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetAxisRaw("Fire3") > 0)
+        {
+            DiveInput?.Invoke();
+        }
+   }
 }
