@@ -18,6 +18,9 @@ public class MarioMotor : MonoBehaviour
     [SerializeField] float _grndSideDivePower = 3f;
     [SerializeField] float _grndUpDivePower = 1f;
 
+    [SerializeField] float _midairInfluence = .2f;
+    [SerializeField] float _maxSpeed = 10f;
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -89,10 +92,27 @@ public class MarioMotor : MonoBehaviour
         if (_isDiving)
             return;
             
-        _lookDirection = Quaternion.LookRotation(schmoveVector.normalized, Vector3.up);
+        if(!_isGrounded)
+        {
+            _rb.AddForce(schmoveVector * _midairInfluence);
 
-        _rb.MovePosition(_rb.position + schmoveVector);
-        _rb.MoveRotation(_lookDirection);
+        
+            return;
+        }
+
+        if (_isGrounded)
+        { 
+            _lookDirection = Quaternion.LookRotation(schmoveVector.normalized, Vector3.up);
+
+            _rb.AddForce(schmoveVector);
+            _rb.MoveRotation(_lookDirection);
+        }
+
+        if(new Vector3(_rb.velocity.x, 0f, _rb.velocity.z).magnitude > _maxSpeed)
+        {
+            Vector3 clampedVelocity= Vector3.ClampMagnitude(new Vector3(_rb.velocity.x, 0f, _rb.velocity.z), _maxSpeed);
+            _rb.velocity = clampedVelocity + new Vector3(0f, _rb.velocity.y, 0f);
+        }
 
         _frameSchmove = Vector3.zero;
     }

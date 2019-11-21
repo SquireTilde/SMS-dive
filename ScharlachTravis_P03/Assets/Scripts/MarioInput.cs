@@ -13,6 +13,9 @@ public class MarioInput : MonoBehaviour
 
     private MarioMotor _motor = null;
 
+    bool _jmp = false;
+    bool _dve = false;
+
     private void Awake()
     {
         _motor = GetComponent<MarioMotor>();
@@ -45,17 +48,33 @@ public class MarioInput : MonoBehaviour
     {
         if (Input.GetAxisRaw("Jump") > 0)
         {
-            Debug.Log("JUMP");
-            JumpInput?.Invoke();
+            if (!_jmp)
+            {
+                _jmp = true;
+                JumpInput?.Invoke();
+            }
+        }
+        if (Input.GetAxisRaw("Jump") == 0)
+        {
+            _jmp = false;
         }
     }
 
     void DetectDiveInput()
     {
         //if (Input.GetKeyDown(KeyCode.LeftShift))
-        if(Input.GetAxisRaw("Fire3") > 0)
+        if (Input.GetAxisRaw("Fire3") > 0)
         {
-            DiveInput?.Invoke();
+            if (!_dve)
+            {
+                _dve = true;
+                DiveInput?.Invoke();
+            }
         }
-   }
+
+        if (Input.GetAxisRaw("Fire3") == 0)
+        {
+            _dve = false;
+        }
+    }
 }

@@ -7,7 +7,7 @@ public class DiveAnim : MonoBehaviour
     [SerializeField] MarioMotor _motor = null;
     [SerializeField] Transform _base = null;
     private Transform _tf = null;
-    [SerializeField] Animation _anim = null;
+    //[SerializeField] Animation _anim = null;
 
     [SerializeField] float _torque = 2f;
 

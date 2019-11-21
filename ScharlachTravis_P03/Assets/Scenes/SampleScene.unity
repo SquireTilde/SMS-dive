@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1280,11 +1280,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 615243462}
     m_Modifications:
-    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Eye (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6843974481330408501, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1354,6 +1349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 27.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Eye (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4064749179873732811, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
@@ -1653,7 +1653,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _motor: {fileID: 1874911253}
   _base: {fileID: 1874911250}
-  _anim: {fileID: 7190689852395205569}
   _torque: 2
 --- !u!1 &1704449998
 GameObject:
@@ -1793,7 +1792,7 @@ Rigidbody:
   m_GameObject: {fileID: 1874911247}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 5
   m_AngularDrag: 53.31
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1840,9 +1839,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50cea54104cb564d89ae61d2ef7849b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0.1
-  _jumpStrength: 200
-  _diveForce: 300
+  _moveSpeed: 50
+  _jumpStrength: 500
+  _diveForce: 600
 --- !u!114 &1874911253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1857,8 +1856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sideDivePower: 9
   _upDivePower: 1
-  _grndSideDivePower: 3
-  _grndUpDivePower: 2
+  _grndSideDivePower: 2
+  _grndUpDivePower: 3
+  _midairInfluence: 0.2
+  _maxSpeed: 10
 --- !u!114 &1874911254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,11 +2100,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 615243462}
     m_Modifications:
-    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Eye
-      objectReference: {fileID: 0}
     - target: {fileID: 6843974481330408501, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2173,6 +2169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 27.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Eye
       objectReference: {fileID: 0}
     - target: {fileID: 4064749179873732811, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
@@ -2264,24 +2265,3 @@ PrefabInstance:
     - {fileID: 7670832399072475088, guid: de2ed84385e7c384a91d938b9e991cba, type: 3}
     - {fileID: 115392313718711552, guid: de2ed84385e7c384a91d938b9e991cba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: de2ed84385e7c384a91d938b9e991cba, type: 3}
---- !u!1 &7190689852395205568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1219238844592958360, guid: de2ed84385e7c384a91d938b9e991cba,
-    type: 3}
-  m_PrefabInstance: {fileID: 7190689852395205567}
-  m_PrefabAsset: {fileID: 0}
---- !u!111 &7190689852395205569
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7190689852395205568}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 40ad5f41278f5dc4e8539988e6514d47, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
