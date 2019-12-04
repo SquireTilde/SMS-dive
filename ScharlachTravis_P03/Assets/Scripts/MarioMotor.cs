@@ -13,6 +13,11 @@ public class MarioMotor : MonoBehaviour
 
     private Quaternion _lookDirection = Quaternion.identity;
 
+    private float _physTimer = 0f;
+
+    [SerializeField] GameObject _bonkDetect = null;
+    [SerializeField] GameObject _slideDetect = null;
+
     [SerializeField] float _sideDivePower = 7f;
     [SerializeField] float _upDivePower = 1f;
     [SerializeField] float _grndSideDivePower = 3f;
@@ -24,6 +29,9 @@ public class MarioMotor : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        _bonkDetect.SetActive(false);
+        _slideDetect.SetActive(false);
+        Physics.autoSimulation = false;
     }
 
     public void Move(Vector3 schmovement)
@@ -57,6 +65,8 @@ public class MarioMotor : MonoBehaviour
         }
 
         _isDiving = true;
+        _bonkDetect.SetActive(true);
+        _slideDetect.SetActive(true);
     }
 
     public void Grounded()
@@ -76,6 +86,14 @@ public class MarioMotor : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _physTimer += Time.deltaTime;
+
+        while (_physTimer >= Time.fixedDeltaTime)
+        {
+            _physTimer -= Time.fixedDeltaTime;
+            Physics.Simulate(Time.fixedDeltaTime);
+        }
+
         ApplySchmovement(_frameSchmove);
     }
 
