@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,6 +154,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &209344844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209344845}
+  - component: {fileID: 209344846}
+  m_Layer: 0
+  m_Name: slideDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209344845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209344844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.99, z: 0.508}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1874911250}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &209344846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209344844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.72, y: 0.35, z: 0.93}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &267759324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267759325}
+  - component: {fileID: 267759326}
+  m_Layer: 0
+  m_Name: bonkDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &267759325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267759324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.799, z: 0.981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1874911250}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &267759326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267759324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63, y: 0.52, z: 0.36}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &268526757
 GameObject:
   m_ObjectHideFlags: 3
@@ -1163,7 +1251,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.01961875, y: 0.023902332, z: 0.00046915826, w: 0.9995217}
+  m_LocalRotation: {x: -0.01961875, y: 0.02390233, z: 0.00046915823, w: 0.9995217}
   m_LocalPosition: {x: -0.455187, y: 3.3572905, z: -10.386213}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1280,6 +1368,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 615243462}
     m_Modifications:
+    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Eye (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6843974481330408501, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1349,11 +1442,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 27.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Eye (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4064749179873732811, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
@@ -1431,7 +1519,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113657377}
-  m_LocalRotation: {x: -0.010006368, y: 0.02390576, z: 0.00023887152, w: 0.9996642}
+  m_LocalRotation: {x: -0.010006368, y: 0.023905758, z: 0.00023887151, w: 0.9996642}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1798,7 +1886,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!4 &1874911250
 Transform:
   m_ObjectHideFlags: 0
@@ -1811,6 +1899,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687884903}
+  - {fileID: 267759325}
+  - {fileID: 209344845}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1854,6 +1944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a830cd439b106e45bdbcd59e80e9842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bonkDetect: {fileID: 267759324}
+  _slideDetect: {fileID: 209344844}
   _sideDivePower: 9
   _upDivePower: 1
   _grndSideDivePower: 2
@@ -2100,6 +2192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 615243462}
     m_Modifications:
+    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
+        type: 3}
+      propertyPath: m_Name
+      value: Eye
+      objectReference: {fileID: 0}
     - target: {fileID: 6843974481330408501, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2169,11 +2266,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 27.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997592162825877800, guid: 68048b073d1d6d241bb3dcefee8b44d0,
-        type: 3}
-      propertyPath: m_Name
-      value: Eye
       objectReference: {fileID: 0}
     - target: {fileID: 4064749179873732811, guid: 68048b073d1d6d241bb3dcefee8b44d0,
         type: 3}
