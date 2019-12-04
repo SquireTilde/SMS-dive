@@ -22,6 +22,10 @@ public class DiveAnim : MonoBehaviour
         {
             _tf.rotation = Quaternion.Euler(_base.eulerAngles.x+110f, _base.eulerAngles.y, _base.eulerAngles.z);
         }
+        else if (_motor._isSliding)
+        {
+            _tf.rotation = Quaternion.Euler(_base.eulerAngles.x + 90f, _base.eulerAngles.y, _base.eulerAngles.z);
+        }
         else
         {
             _tf.rotation = _base.rotation;

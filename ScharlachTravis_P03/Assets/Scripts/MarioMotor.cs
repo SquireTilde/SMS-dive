@@ -5,18 +5,21 @@ using UnityEngine;
 public class MarioMotor : MonoBehaviour
 {
     Rigidbody _rb = null;
+    Transform _tf = null;
 
     Vector3 _frameSchmove = Vector3.zero;
     public bool _isGrounded { private set; get; } = true;
     public bool _isMoving { private set; get; } = false;
     public bool _isDiving { private set; get; } = false;
+    public bool _isSliding { private set; get; } = false;
+    public bool _waterSliding { private set; get; } = false;
+    public bool _isBonking { private set; get; } = false;
 
     private Quaternion _lookDirection = Quaternion.identity;
 
     private float _physTimer = 0f;
 
     [SerializeField] GameObject _bonkDetect = null;
-    [SerializeField] GameObject _slideDetect = null;
 
     [SerializeField] float _sideDivePower = 7f;
     [SerializeField] float _upDivePower = 1f;
@@ -26,11 +29,14 @@ public class MarioMotor : MonoBehaviour
     [SerializeField] float _midairInfluence = .2f;
     [SerializeField] float _maxSpeed = 10f;
 
+    [SerializeField] float _slideDrag = 0.3f;
+    [SerializeField] float _normalDrag = 2f;
+
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        _tf = GetComponent<Transform>();
         _bonkDetect.SetActive(false);
-        _slideDetect.SetActive(false);
         Physics.autoSimulation = false;
     }
 
@@ -42,7 +48,9 @@ public class MarioMotor : MonoBehaviour
     public void Jump(float jumpForce)
     {
         if (!_isGrounded || _isDiving)
+        {
             return;
+        } 
 
         _rb.AddForce(Vector3.up * jumpForce);
     }
@@ -55,6 +63,12 @@ public class MarioMotor : MonoBehaviour
         if (_isDiving)
             return;
 
+        if (_isSliding)
+        {
+            //Dive rules are different if sliding
+            return;
+        }
+
         if (!_isGrounded)
         {
             _rb.AddForce(_lookDirection * (new Vector3(0f, _upDivePower, _sideDivePower).normalized * diveForce));
@@ -66,21 +80,39 @@ public class MarioMotor : MonoBehaviour
 
         _isDiving = true;
         _bonkDetect.SetActive(true);
-        _slideDetect.SetActive(true);
     }
 
-    public void Grounded()
+    public void Grounded(bool landing)
     {
-        _isGrounded = true;
+        if (_isDiving && landing)
+            Slide();
 
-        //This should go somewhere else, but it's here until i implement the diving hitboxes
-        if (_isDiving)
-            _isDiving = false;
+
+        _isGrounded = true;
     }
 
     public void Airborne()
     {
         _isGrounded = false;
+        _isSliding = false;
+    }
+
+    void Slide()
+    {
+        _isSliding = true;
+        _isDiving = false;
+    }
+
+    void DiveDrag()
+    {
+        if(_isSliding || _isDiving)
+        {
+            _rb.drag = _slideDrag;
+        }
+        else
+        {
+            _rb.drag = _normalDrag;
+        }
     }
 
 
@@ -93,6 +125,9 @@ public class MarioMotor : MonoBehaviour
             _physTimer -= Time.fixedDeltaTime;
             Physics.Simulate(Time.fixedDeltaTime);
         }
+
+        DiveDrag();
+
 
         ApplySchmovement(_frameSchmove);
     }
@@ -113,8 +148,17 @@ public class MarioMotor : MonoBehaviour
         if(!_isGrounded)
         {
             _rb.AddForce(schmoveVector * _midairInfluence);
+            return;
+        }
 
-        
+        if(_isSliding && !_waterSliding)
+        {
+            return;
+        }
+        else if(_isSliding && _waterSliding)
+        {
+            //i think using _midairInfluence only on Mario's X-axis will do the trick for the translation
+            //rotation will require something different
             return;
         }
 

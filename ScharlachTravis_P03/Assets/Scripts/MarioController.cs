@@ -54,9 +54,9 @@ public class MarioController : MonoBehaviour
         _motor.Dive(_diveForce);
     }
 
-    private void OnLand()
+    private void OnLand(bool landing)
     {
-        _motor.Grounded();
+        _motor.Grounded(landing);
     }
 
     private void OnUnland()

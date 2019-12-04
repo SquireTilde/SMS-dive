@@ -154,50 +154,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &209344844
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 209344845}
-  - component: {fileID: 209344846}
-  m_Layer: 0
-  m_Name: slideDetector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &209344845
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209344844}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.99, z: 0.508}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1874911250}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &209344846
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209344844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.72, y: 0.35, z: 0.93}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &267759324
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,9 +163,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 267759325}
-  - component: {fileID: 267759326}
   m_Layer: 0
-  m_Name: bonkDetector
+  m_Name: Bonk Detector Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,19 +184,6 @@ Transform:
   m_Father: {fileID: 1874911250}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &267759326
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267759324}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.63, y: 0.52, z: 0.36}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &268526757
 GameObject:
   m_ObjectHideFlags: 3
@@ -1174,6 +1116,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &896466799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896466802}
+  - component: {fileID: 896466801}
+  - component: {fileID: 896466800}
+  m_Layer: 0
+  m_Name: Bonk Detector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &896466800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896466799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2d44452d27544448daf70266bf89de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetObject: {fileID: 267759325}
+  _xPos: 0
+  _yPos: 0
+  _zPos: 0
+  _xRot: 0
+  _yRot: 0
+  _zRot: 0
+--- !u!65 &896466801
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896466799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63, y: 0.52, z: 0.36}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &896466802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896466799}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.004095947, y: 1.5810001, z: 0.021000028}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1257,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.01961875, y: 0.02390233, z: 0.00046915823, w: 0.9995217}
+  m_LocalRotation: {x: -0.01961875, y: 0.023902332, z: 0.00046915826, w: 0.9995217}
   m_LocalPosition: {x: -0.455187, y: 3.3572905, z: -10.386213}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1519,7 +1525,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113657377}
-  m_LocalRotation: {x: -0.010006368, y: 0.023905758, z: 0.00023887151, w: 0.9996642}
+  m_LocalRotation: {x: -0.010006368, y: 0.02390576, z: 0.00023887152, w: 0.9996642}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1705,6 +1711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1687884903}
   - component: {fileID: 1687884904}
+  - component: {fileID: 1687884905}
   m_Layer: 0
   m_Name: Art
   m_TagString: Untagged
@@ -1741,6 +1748,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _motor: {fileID: 1874911253}
   _base: {fileID: 1874911250}
+  _torque: 2
+--- !u!114 &1687884905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687884902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa43624fb91498c4c987195e8db0a213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motor: {fileID: 1874911253}
+  _base: {fileID: 1874911250}
+  _tf: {fileID: 0}
   _torque: 2
 --- !u!1 &1704449998
 GameObject:
@@ -1850,6 +1873,7 @@ GameObject:
   - component: {fileID: 1874911253}
   - component: {fileID: 1874911252}
   - component: {fileID: 1874911255}
+  - component: {fileID: 1874911256}
   m_Layer: 0
   m_Name: '---PLAYER---'
   m_TagString: Player
@@ -1864,7 +1888,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874911247}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e1915807f0880f84386b3bb268697438, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.27
@@ -1880,8 +1904,8 @@ Rigidbody:
   m_GameObject: {fileID: 1874911247}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 5
-  m_AngularDrag: 53.31
+  m_Drag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -1900,7 +1924,6 @@ Transform:
   m_Children:
   - {fileID: 1687884903}
   - {fileID: 267759325}
-  - {fileID: 209344845}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1915,7 +1938,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.18, z: 0.5}
+  m_Size: {x: 0.42, y: 0.18, z: 0.3}
   m_Center: {x: 0, y: -0.61, z: 0}
 --- !u!114 &1874911252
 MonoBehaviour:
@@ -1931,7 +1954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 50
   _jumpStrength: 500
-  _diveForce: 600
+  _diveForce: 300
 --- !u!114 &1874911253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,13 +1968,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bonkDetect: {fileID: 267759324}
-  _slideDetect: {fileID: 209344844}
   _sideDivePower: 9
   _upDivePower: 1
-  _grndSideDivePower: 2
-  _grndUpDivePower: 3
+  _grndSideDivePower: 5
+  _grndUpDivePower: 5
   _midairInfluence: 0.2
   _maxSpeed: 10
+  _slideDrag: 0.1
+  _normalDrag: 3
 --- !u!114 &1874911254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1977,6 +2001,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cbfba06c3a61644b199b8980eb5c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1874911256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874911247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bb06031dfeada4d986869a0d6082d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _normal: {fileID: 13400000, guid: e1915807f0880f84386b3bb268697438, type: 2}
+  _slide: {fileID: 13400000, guid: a6e6eb6d471043347869f22505b87a74, type: 2}
 --- !u!1 &1935058506
 GameObject:
   m_ObjectHideFlags: 0
